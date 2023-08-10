@@ -1,0 +1,10 @@
+0. editar urls.conf -> leer las instrucciones pero es servicio;version;url
+1. editar cronjob.conf -> sólo la fecha
+2. tener a mano las credenciales para AWS
+3. docker-compose up --build -d
+4. docker exec -it <contenedor> /bin/bash
+5. crontab -e -> checkear si está bien la config
+6. aws --version -> checkear si está bien aws cli
+7. aws --configure -> completar a mano
+8. python3 get_custom_data.py -> checkear que busque y suba bien antes de salir
+9. revisar depués de unos minutos que estén llegando los datos

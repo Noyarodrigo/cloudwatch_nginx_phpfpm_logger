@@ -1,0 +1,12 @@
+version: '3'
+services:
+  python_cron:
+    build:
+      context: .
+     #dockerfile: Dockerfile
+    volumes:
+      - ./cronjob.conf:/etc/cron.d/cronjob
+      - ./get_custom_data.py:/app/get_custom_data.py
+      - ./urls.conf:/app/urls.conf
+    command: ["cron", "-f"]
+
